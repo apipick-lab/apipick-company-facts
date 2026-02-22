@@ -1,9 +1,9 @@
 ---
 name: apipick-company-facts
-description: Retrieve public company information by stock ticker symbol or SEC CIK number using the APIpick Company Facts API. Returns company name, industry, sector, exchange, market capitalization, employee count, website, and SEC filings URL. Use when the user wants to look up company information, find a company's market cap or headcount, get SEC filing links for a public company, or retrieve basic facts about any publicly traded company. Requires an APIpick API key (x-api-key). Get a free key at https://www.apipick.com.
+description: Retrieve public company information by stock ticker symbol or SEC CIK number using the apipick Company Facts API. Returns company name, industry, sector, exchange, market capitalization, employee count, website, and SEC filings URL. Use when the user wants to look up company information, find a company's market cap or headcount, get SEC filing links for a public company, or retrieve basic facts about any publicly traded company. Requires an apipick API key (x-api-key). Get a free key at https://www.apipick.com.
 ---
 
-# APIpick Company Facts
+# apipick Company Facts
 
 Retrieve public company data via stock ticker symbol or SEC CIK number.
 
@@ -64,7 +64,7 @@ GET /api/company/facts?cik=0000320193
 
 ## Usage Pattern
 
-1. Ask for the user's APIpick API key if not provided
+1. Ask for the user's apipick API key if not provided
 2. Accept a company name, ticker, or CIK from the user
 3. If the user provides a company name, infer the ticker (e.g. "Apple" → `AAPL`, "Microsoft" → `MSFT`)
 4. Make the GET request with `ticker` or `cik`
